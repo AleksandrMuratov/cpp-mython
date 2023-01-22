@@ -2,7 +2,7 @@
 #include "parse.h"
 #include "runtime.h"
 #include "statement.h"
-#include "test_runner.h"
+#include "test_runner_p.h"
 
 #include <iostream>
 
@@ -46,7 +46,6 @@ print None
 
     ostringstream output;
     RunMythonProgram(input, output);
-
     ASSERT_EQUAL(output.str(), "57\n10 24 -8\nhello\nworld\nTrue False\n\nNone\n");
 }
 
